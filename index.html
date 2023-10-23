@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookMySeat</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Welcome to BookMySeat</h1>
+    <div class="controls">
+        <label for="type-seats">Ticket Type:</label>
+        <select id="type-seats">
+            <optgroup label="Ticket Type" selected>
+                <option value="Normal">Normal</option>
+                <option value="Premium">Premium</option>
+            </optgroup>
+        </select>
+        <label for="num-seats">Number of Seats:</label>
+        <select id="num-seats">
+            <optgroup label="Qty" selected>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </optgroup>
+        </select>
+
+    </div>
+    <div class="seat-selection" id="seat-selection">
+        <div class="row-labels" id="row-labels">
+            <!-- Row labels (alphabet) will be generated dynamically in JavaScript -->
+        </div>
+        <div class="seating-layout">
+            <!-- seating arrangement -->
+        </div>
+        <div class="legend">
+            <h2>Key to seat Layout</h2>
+            <div class="available-seat"></div> Available
+            <div class="selected-seat"></div> Your Selection
+            <div class="booked-seat"></div> Unavailable
+        </div>
+
+    </div>
+    <button class="book-seats" id="book-seats">PROCEED</button>
+
+    <div class="confirmation-message" id="confirmation-message"></div>
+    <script src="script.js"></script>
+</body>
+
+</html>
