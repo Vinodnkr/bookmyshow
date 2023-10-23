@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #c2c6cc;
+    margin: 10px;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+.seating-layout {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-x: auto;
+    background-color: #f4f4ff;
+}
+
+.row-labels {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-weight: bold;
+    margin-right: 10px;
+
+
+
+
+}
+
+.row {
+    display: flex;
+    margin: 5px 0;
+}
+
+.seat {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #ccc;
+    margin: 0 5px;
+    cursor: pointer;
+    background-color: lightgreen;
+
+}
+
+.available-seat {
+    background-color: white;
+    background-image: url('https://res.cloudinary.com/dyixrm8rs/image/upload/v1698082348/armchair_kcaq8h.png');
+    background-size: cover;
+    border: none;
+
+}
+
+.selected-seat {
+    background-color: lightgreen;
+    background-image: url('https://res.cloudinary.com/dyixrm8rs/image/upload/v1698082348/armchair_kcaq8h.png');
+    background-size: cover;
+    border: none;
+
+}
+
+.booked-seat {
+    background-color: grey;
+    background-image: url('https://res.cloudinary.com/dyixrm8rs/image/upload/v1698082348/armchair_kcaq8h.png');
+    background-size: cover;
+    border: none;
+
+}
+
+.legend {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: 50px;
+}
+
+.available-seat,
+.selected-seat,
+.booked-seat {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.book-seats {
+    background-color: red;
+    font-weight: bold;
+}
+
+.controls {
+    margin-top: 20px;
+}
+
+.seat-selection {
+    display: flex;
+    justify-content: center
+}
+
+label {
+    font-size: 18px;
+}
+
+select,
+input {
+    font-size: 16px;
+    padding: 5px;
+    margin: 5px;
+}
+
+button {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.confirmation-message {
+    margin: 20px 0;
+    font-size: 18px;
+    color: #007BFF;
+}
